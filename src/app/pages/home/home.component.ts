@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessagesService } from 'src/app/services/messages.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  tweets: string[] = []
 
-  constructor() { }
+	constructor(private service: MessagesService) { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+		this.tweets = this.service.getMessages()
+	}
+
 
 }
