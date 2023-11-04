@@ -8,7 +8,7 @@ import { MessagesService } from 'src/app/services/service';
 })
 export class NewPostComponent implements OnInit {
   tweetMessage: string = ""
-	tweetMaxLength: number = 240
+	tweetMaxLength: number = 244
 	tweetRemain: number = this.tweetMaxLength
 
 	constructor(private service: MessagesService) {
