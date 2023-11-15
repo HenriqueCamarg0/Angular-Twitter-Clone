@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormsModule } from '@angular/forms'
 import { MessagesService } from './services/messages.service';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { SidbarComponent } from './components/sidbar/sidbar.component';
+import { SocialComponent } from './components/social/social.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { AvatarComponent } from './components/avatar/avatar.component';
     FooterComponent,
     TweetComponent,
     HomeComponent,
-    AvatarComponent
+    AvatarComponent,
+    SidbarComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [MessagesService],
   bootstrap: [AppComponent]

@@ -2,13 +2,25 @@
 	<app-header></app-header>
 </header>
 
-<div class="flex items-center justify-center container mx-auto">
-	<app-new-post></app-new-post>
-</div>
-<div class="flex flex-col items-center justify-center container mx-auto" *ngFor="let tw of tweets">
-	<app-tweet [TweetMessage]=tw ></app-tweet>
-</div>
+<div class=" flex flex-col md:flex-row justify-center items-center space-x-10">
+	<div class=""><app-sidbar></app-sidbar></div>
 
-<div class="fixed bottom-0 m-auto w-full">
+	<div class="">
+
+ 
+		<div class="flex items-center justify-center container mx-auto ">
+			<app-new-post></app-new-post>
+		</div>
+		<div class="flex flex-col items-center justify-center container mx-auto" *ngFor="let tw of tweets">
+			<app-tweet [TweetMessage]=tw ></app-tweet>
+		</div>
+		
+
+	</div>
+
+	<div class=" "><app-social></app-social></div>
+  </div>
+
+  <div class="fixed bottom-0 m-auto w-full">
 	<app-footer></app-footer>
 </div>
