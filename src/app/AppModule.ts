@@ -12,6 +12,8 @@ import { MessagesService } from './services/messages.service';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { SidbarComponent } from './components/sidbar/sidbar.component';
 import { SocialComponent } from './components/social/social.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SocialComponent } from './components/social/social.component';
     HomeComponent,
     AvatarComponent,
     SidbarComponent,
-    SocialComponent
+    SocialComponent,
+    TabsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
