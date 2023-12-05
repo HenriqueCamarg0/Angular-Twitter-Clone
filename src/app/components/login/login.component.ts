@@ -11,5 +11,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  clicar() {
+    alert('Você Criou Sua conta');
+  }
 
 }

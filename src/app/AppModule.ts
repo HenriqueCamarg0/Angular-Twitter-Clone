@@ -14,6 +14,12 @@ import { SidbarComponent } from './components/sidbar/sidbar.component';
 import { SocialComponent } from './components/social/social.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { LoginComponent } from './components/login/login.component';
+import { NewsComponent } from './components/news/news.component';
+import { FeedsComponent } from './components/feeds/feeds.component';
+import { ProflieComponent } from './toolbar/proflie/proflie.component';
+import { FrendsComponent } from './toolbar/frends/frends.component';
+import { ReelsComponent } from './toolbar/reels/reels.component';
+import { SettingsComponent } from './toolbar/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,14 @@ import { LoginComponent } from './components/login/login.component';
     SidbarComponent,
     SocialComponent,
     TabsComponent,
-    LoginComponent
+    LoginComponent,
+    NewsComponent,
+    FeedsComponent,
+    ProflieComponent,
+    FrendsComponent,
+    ProflieComponent,
+    ReelsComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

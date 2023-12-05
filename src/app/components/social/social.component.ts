@@ -12,4 +12,7 @@ export class SocialComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clicar(){
+    alert('Funcionou');  }
+
 }

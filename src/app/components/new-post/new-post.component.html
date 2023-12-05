@@ -44,18 +44,33 @@
 				</div>
 
 				<!-- button -->
-				<div class="mt-5">
-					<button (click)="sendTweet()" type="button" class="w-32 focus:outline-none border
-						border-transparent py-2 px-5 rounded-lg
+				<div class="mt-5 flex space-x-1">
+
+
+
+					<!-- <button (click)="sendTweet()" type="button" class="w-32 focus:outline-none border
+						border-transparent py-1 px-2 rounded-lg
 						shadow
 						text-center
 						text-white
-						bg-blue-500
+						dark:bg-gray-400
 						hover:bg-blue-600
 						font-medium
 						">
 						Tweet
+					</button> -->
+
+					<button (click)="sendTweet()" type="button" class=" flex space-x-1 justify-between items-center gap-3 py-2 px-8 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none 
+							bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 
+				dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Tweet
+						
 					</button>
+					<button type="button" class=" flex space-x-1 justify-between items-center gap-3 py-2 px-8 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none 
+							bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 
+				dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Add
+						
+					</button>
+
 				</div>
 
 			</div>
@@ -65,4 +80,3 @@
 	</div>
 
 </div>
-
